@@ -35,13 +35,29 @@ Lint your source files with TSLint.
 }
 ```
 
-## Example
+## Usage
+
+To use this task, install the npm package:
+
+```
+npm install --save-dev ionic-gulp-tslint
+```
+
+Add the following to the `gulpfile.js` in order to run `gulp lint` from a terminal and use the rules found in the `tslint.json` file.
 
 ```javascript
 var tslint = require('ionic-gulp-tslint');
 
 // default options
 gulp.task('lint', tslint);
+```
+
+## Advanced Usage
+
+Many of the options can be overridden from the defaults. The following task passes custom options.
+
+```javascript
+var tslint = require('ionic-gulp-tslint');
 
 // override options
 gulp.task('lint', function () {
