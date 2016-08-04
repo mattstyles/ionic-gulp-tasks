@@ -43,6 +43,8 @@ To use this task, install the npm package:
 npm install --save-dev ionic-gulp-tslint
 ```
 
+_Note: this package is already added by default to Ionic 2 starters._
+
 Add the following to the `gulpfile.js` in order to run `gulp lint` from a terminal and use the rules found in the `tslint.json` file.
 
 ```javascript
