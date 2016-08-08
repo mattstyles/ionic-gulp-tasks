@@ -39,6 +39,23 @@ module.exports = function(options) {
   var b = browserify(options.src, options.browserifyOptions)
     .plugin(tsify, options.tsifyOptions);
 
+  console.log(options)
+
+  if (options.postTransforms) {
+    options.postTransforms.forEach(t => {
+      if (typeof t === 'string') {
+        b.transform(t);
+        return;
+      }
+
+      if (typeof t === 'object') {
+        Object.keys(t).forEach(key => {
+          b.transform(key, t[key]);
+        })
+      }
+    });
+  }
+
   if (options.watch) {
     b = watchify(b, options.watchifyOptions);
     b.on('update', bundle);
