@@ -72,21 +72,21 @@
 30 silly publish uploading /Users/mattstyles/.npm/ionic-gulp-browserify-typescript-postTransform/2.0.0/package.tgz
 31 verbose request uri https://registry.npmjs.org/ionic-gulp-browserify-typescript-postTransform
 32 verbose request sending authorization for write operation
-33 info attempt registry request try #1 at 11:49:13 AM
-34 verbose request id bb24bc8c8a1b848b
+33 info attempt registry request try #1 at 11:49:29 AM
+34 verbose request id 8774b6e13660ad00
 35 http request PUT https://registry.npmjs.org/ionic-gulp-browserify-typescript-postTransform
 36 http 403 https://registry.npmjs.org/ionic-gulp-browserify-typescript-postTransform
 37 verbose headers { 'content-type': 'application/json',
 37 verbose headers   'cache-control': 'max-age=300',
 37 verbose headers   'content-length': '95',
 37 verbose headers   'accept-ranges': 'bytes',
-37 verbose headers   date: 'Mon, 08 Aug 2016 10:48:59 GMT',
+37 verbose headers   date: 'Mon, 08 Aug 2016 10:49:16 GMT',
 37 verbose headers   via: '1.1 varnish',
 37 verbose headers   connection: 'keep-alive',
-37 verbose headers   'x-served-by': 'cache-lcy1122-LCY',
+37 verbose headers   'x-served-by': 'cache-lcy1126-LCY',
 37 verbose headers   'x-cache': 'MISS',
 37 verbose headers   'x-cache-hits': '0',
-37 verbose headers   'x-timer': 'S1470653338.226963,VS0,VE1069',
+37 verbose headers   'x-timer': 'S1470653354.868487,VS0,VE1190',
 37 verbose headers   vary: 'Accept-Encoding' }
 38 verbose request invalidating /Users/mattstyles/.npm/registry.npmjs.org/ionic-gulp-browserify-typescript-postTransform on PUT
 39 error publish Failed PUT 403
