@@ -1,0 +1,115 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   '--force' ]
+2 info using npm@3.9.5
+3 info using node@v6.2.2
+4 warn using --force I sure hope you know what you are doing.
+5 verbose publish [ '.' ]
+6 silly cache add args [ '.', null ]
+7 verbose cache add spec .
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: '.',
+8 silly cache add   scope: null,
+8 silly cache add   name: null,
+8 silly cache add   rawSpec: '.',
+8 silly cache add   spec: '/Users/mattstyles/projects/ionic/buildTasks/ionic-gulp-tasks/browserify-typescript',
+8 silly cache add   type: 'directory' }
+9 verbose addLocalDirectory /Users/mattstyles/.npm/ionic-gulp-browserify-typescript-postTransform/2.0.0/package.tgz not in flight; packing
+10 verbose correctMkdir /Users/mattstyles/.npm correctMkdir not in flight; initializing
+11 info lifecycle ionic-gulp-browserify-typescript-postTransform@2.0.0~prepublish: ionic-gulp-browserify-typescript-postTransform@2.0.0
+12 silly lifecycle ionic-gulp-browserify-typescript-postTransform@2.0.0~prepublish: no script for prepublish, continuing
+13 verbose tar pack [ '/Users/mattstyles/.npm/ionic-gulp-browserify-typescript-postTransform/2.0.0/package.tgz',
+13 verbose tar pack   '/Users/mattstyles/projects/ionic/buildTasks/ionic-gulp-tasks/browserify-typescript' ]
+14 verbose tarball /Users/mattstyles/.npm/ionic-gulp-browserify-typescript-postTransform/2.0.0/package.tgz
+15 verbose folder /Users/mattstyles/projects/ionic/buildTasks/ionic-gulp-tasks/browserify-typescript
+16 verbose addLocalTarball adding from inside cache /Users/mattstyles/.npm/ionic-gulp-browserify-typescript-postTransform/2.0.0/package.tgz
+17 verbose correctMkdir /Users/mattstyles/.npm correctMkdir not in flight; initializing
+18 silly cache afterAdd ionic-gulp-browserify-typescript-postTransform@2.0.0
+19 verbose afterAdd /Users/mattstyles/.npm/ionic-gulp-browserify-typescript-postTransform/2.0.0/package/package.json not in flight; writing
+20 verbose correctMkdir /Users/mattstyles/.npm correctMkdir not in flight; initializing
+21 verbose afterAdd /Users/mattstyles/.npm/ionic-gulp-browserify-typescript-postTransform/2.0.0/package/package.json written
+22 silly publish { name: 'ionic-gulp-browserify-typescript-postTransform',
+22 silly publish   description: 'Gulp task for Ionic projects to transpile and bundle TypeScript sources with Browserify',
+22 silly publish   version: '2.0.0',
+22 silly publish   license: 'MIT',
+22 silly publish   repository:
+22 silly publish    { type: 'git',
+22 silly publish      url: 'git+https://github.com/driftyco/ionic-gulp-tasks.git' },
+22 silly publish   dependencies:
+22 silly publish    { browserify: '^13.0.0',
+22 silly publish      gulp: '^3.9.1',
+22 silly publish      'gulp-sourcemaps': '^1.6.0',
+22 silly publish      'gulp-uglify': '^1.5.3',
+22 silly publish      'lodash.merge': '^4.3.2',
+22 silly publish      prettysize: '0.0.3',
+22 silly publish      tsify: '^0.14.1',
+22 silly publish      'vinyl-buffer': '^1.0.0',
+22 silly publish      'vinyl-source-stream': '^1.1.0',
+22 silly publish      watchify: '^3.7.0' },
+22 silly publish   readme: '# Browserify TypeScript Task\nUse Browserify to transpile and bundle your TypeScript source files.\n\n## API\n\n### browserifyBuild([options])\n\nReturns a [stream](http://nodejs.org/api/stream.html) of [Vinyl files](https://github.com/wearefractal/vinyl-fs)\nthat can be [piped](http://nodejs.org/api/stream.html#stream_readable_pipe_destination_options).\n\n#### Available options:\n- **watch** (boolean) Whether to watch for changes or not. Default: `false`.\n- **src** (string|File|Array) String, file object, or array of those types (they may be mixed) specifying Browserify entry file(s). Default: `[\'./app/app.ts\', \'./typings/main.d.ts\']`.\n- **outputPath** (string) Output path for the bundle and sourcemaps. Default: `\'www/build/js/\'`.\n- **outputFile** (string) Name of the bundle. Default: `\'app.bundle.js\'`.\n- **minify** (boolean) Whether to minify the bundle using Uglify or not. Default: `false`.\n- **browserifyOptions** (Object) [Browserify options](https://github.com/substack/node-browserify#browserifyfiles--opts). Defaults:\n```\n{\n  cache: {},\n  packageCache: {},\n  debug: true // sourcemaps on\n}\n```\n- **watchifyOptions** (Object) [Watchify options](https://github.com/substack/watchify#watchifyb-opts) for when `watch` is true. Default: `{}`.\n- **tsifyOptions** (Object) [Tsify options](https://github.com/TypeStrong/tsify#options). Default: `{}`.\n- **uglifyOptions** (Object) [Uglify options](https://github.com/terinjokes/gulp-uglify#options) for when `minify` is true. Default: `{}`.\n\n## Notes\nSetting `options.browserifyOptions.debug` to `false` will disable sourcemaps and drastically speed up your rebuilds when watching.\n\n## Example\n\n```\nvar browserifyBuild = require(\'ionic-gulp-browserify-typescript\');\n\ngulp.task(\'build\', browserifyBuild);\n\ngulp.task(\'watch\', function(){\n  return browserifyBuild({\n    watch: true,\n    browserifyOptions: { debug: false } //if you want to disable sourcemaps\n  });\n});\n```\n\n\n\n\n\n',
+22 silly publish   readmeFilename: 'README.md',
+22 silly publish   bugs: { url: 'https://github.com/driftyco/ionic-gulp-tasks/issues' },
+22 silly publish   homepage: 'https://github.com/driftyco/ionic-gulp-tasks#readme',
+22 silly publish   _id: 'ionic-gulp-browserify-typescript-postTransform@2.0.0',
+22 silly publish   scripts: {},
+22 silly publish   _shasum: '3ce56bc2e5d16dcd19a809ec065fb6efcfe99f5b',
+22 silly publish   _from: '.' }
+23 verbose getPublishConfig undefined
+24 silly mapToRegistry name ionic-gulp-browserify-typescript-postTransform
+25 silly mapToRegistry using default registry
+26 silly mapToRegistry registry https://registry.npmjs.org/
+27 silly mapToRegistry data Result {
+27 silly mapToRegistry   raw: 'ionic-gulp-browserify-typescript-postTransform',
+27 silly mapToRegistry   scope: null,
+27 silly mapToRegistry   name: 'ionic-gulp-browserify-typescript-postTransform',
+27 silly mapToRegistry   rawSpec: '',
+27 silly mapToRegistry   spec: 'latest',
+27 silly mapToRegistry   type: 'tag' }
+28 silly mapToRegistry uri https://registry.npmjs.org/ionic-gulp-browserify-typescript-postTransform
+29 verbose publish registryBase https://registry.npmjs.org/
+30 silly publish uploading /Users/mattstyles/.npm/ionic-gulp-browserify-typescript-postTransform/2.0.0/package.tgz
+31 verbose request uri https://registry.npmjs.org/ionic-gulp-browserify-typescript-postTransform
+32 verbose request sending authorization for write operation
+33 info attempt registry request try #1 at 11:49:13 AM
+34 verbose request id bb24bc8c8a1b848b
+35 http request PUT https://registry.npmjs.org/ionic-gulp-browserify-typescript-postTransform
+36 http 403 https://registry.npmjs.org/ionic-gulp-browserify-typescript-postTransform
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Mon, 08 Aug 2016 10:48:59 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-lcy1122-LCY',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1470653338.226963,VS0,VE1069',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/mattstyles/.npm/registry.npmjs.org/ionic-gulp-browserify-typescript-postTransform on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 2.0.0." : ionic-gulp-browserify-typescript-postTransform
+40 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:200:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+40 verbose stack     at emitOne (events.js:101:20)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:988:12)
+41 verbose statusCode 403
+42 verbose pkgid ionic-gulp-browserify-typescript-postTransform
+43 verbose cwd /Users/mattstyles/projects/ionic/buildTasks/ionic-gulp-tasks/browserify-typescript
+44 error Darwin 15.3.0
+45 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish" "--force"
+46 error node v6.2.2
+47 error npm  v3.9.5
+48 error code E403
+49 error "You cannot publish over the previously published version 2.0.0." : ionic-gulp-browserify-typescript-postTransform
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]

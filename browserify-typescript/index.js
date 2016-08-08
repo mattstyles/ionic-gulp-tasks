@@ -39,8 +39,6 @@ module.exports = function(options) {
   var b = browserify(options.src, options.browserifyOptions)
     .plugin(tsify, options.tsifyOptions);
 
-  console.log(options)
-
   if (options.postTransforms) {
     options.postTransforms.forEach(t => {
       if (typeof t === 'string') {

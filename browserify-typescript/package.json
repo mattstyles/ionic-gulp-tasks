@@ -1,5 +1,5 @@
 {
-  "name": "ionic-gulp-browserify-typescript",
+  "name": "ionic-gulp-browserify-typescript-postTransform",
   "description": "Gulp task for Ionic projects to transpile and bundle TypeScript sources with Browserify",
   "version": "2.0.0",
   "license": "MIT",
